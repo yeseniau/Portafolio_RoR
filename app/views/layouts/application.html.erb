@@ -14,17 +14,19 @@
 
   <body>
   <div class="container">
+  <div class="navbar mb-3">
     <ul class="nav">
       <li class="nav-item">
         <%= link_to "Home", root_path, class:"nav-link" %>
       </li>
       <li class="nav-item">
-      <%= link_to "Projects", {controller:"portafolio", action:"projects"}, method: :get, class:"nav-link" %>
+        <%= link_to "Projects", {controller:"portafolio", action:"projects"}, method: :get, class:"nav-link" %>
       </li>
-    <li class="nav-item">
-    <%= link_to "Contacto", {controller:"portafolio", action:"contact"}, method: :get, class:"nav-link"%>
-    </li>
-</ul>
+      <li class="nav-item">
+        <%= link_to "Contacto", {controller:"portafolio", action:"contact"}, method: :get, class:"nav-link"%>
+      </li>
+    </ul>
+    </div>
   <%= yield %>
   </div>
   </body>
